@@ -17,14 +17,14 @@ import avatar from "assets/img/faces/th.jpg";
 
 const styles = {
   cardCategoryWhite: {
-    color: "rgba(255,255,255,.62)",
+    color: "black",
     margin: "0",
     fontSize: "14px",
     marginTop: "0",
     marginBottom: "0"
   },
   cardTitleWhite: {
-    color: "#FFFFFF",
+    color: "black",
     marginTop: "0px",
     minHeight: "auto",
     fontWeight: "300",
@@ -47,7 +47,7 @@ function UserProfile(props) {
             </CardHeader>
             <CardBody>
               <Grid container>
-                <GridItem xs={12} sm={12} md={5}>
+                {/* <GridItem xs={12} sm={12} md={5}>
                   <CustomInput
                     labelText="Company (disabled)"
                     id="company-disabled"
@@ -58,7 +58,7 @@ function UserProfile(props) {
                       disabled: true
                     }}
                   />
-                </GridItem>
+                </GridItem> */}
                 <GridItem xs={12} sm={12} md={3}>
                   <CustomInput
                     labelText="Username"
@@ -129,7 +129,7 @@ function UserProfile(props) {
               </Grid>
               <Grid container>
                 <GridItem xs={12} sm={12} md={12}>
-                  <InputLabel style={{ color: "#AAAAAA" }}>About me</InputLabel>
+                  <InputLabel style={{ color: "black" }}>About me</InputLabel>
                   <CustomInput
                     labelText="Fill in with info about yourself"
                     id="about-me"
@@ -145,7 +145,7 @@ function UserProfile(props) {
               </Grid>
             </CardBody>
             <CardFooter>
-              <Button color="primary">Update Profile</Button>
+              <Button color="success">Update Profile</Button>
             </CardFooter>
           </Card>
         </GridItem>
@@ -165,9 +165,9 @@ The Gunpowder Treason and plot;
 I know of no reason why Gunpowder Treason
 Should ever be forgot.
               </p>
-              <Button color="primary" round>
+              {/* <Button color="primary" round>
                 Follow
-              </Button>
+              </Button> */}
             </CardBody>
           </Card>
         </GridItem>
