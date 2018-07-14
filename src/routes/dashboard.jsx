@@ -63,7 +63,7 @@ const dashboardRoutes = [
   {
     path: "/notifications",
     sidebarName: "Goals",
-    navbarName: "Notifications",
+    navbarName: "Goals",
     icon: Notifications,
     component: NotificationsPage
   },
