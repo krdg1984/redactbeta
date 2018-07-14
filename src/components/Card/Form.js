@@ -4,6 +4,7 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.handleChange.bind(this)
+    this.onSubmit.bind(this)
     this.state = {
                   loans: '',
                   creditCards: '',
@@ -23,6 +24,22 @@ class Form extends Component {
     change[value] = e.target.value
     this.setState(change)
   } 
+
+  onSubmit(event) {
+    event.preventDefault();
+    this.setState({
+      loans: '',
+      creditCards: '',
+      utilities: '',
+      rentMortgage: '',
+      transportation: '',
+      debt: '',
+      activities: '',
+      travel: '',
+      buyHome: '',
+      invest: ''
+      })
+  }
   
     render () {
         
@@ -67,11 +84,13 @@ class Form extends Component {
        
         </div>
         
-        <button type="submit" onClick={this.submitButton}>
-          
+        <div>
+        <button type="submit" onClick={(event)=>this.onSubmit(event)}>
+        
           Submit
 
         </button>
+        </div>
         </div>
     );
   }
