@@ -58,7 +58,7 @@ const sidebarStyle = theme => ({
       height: "1px",
       right: "15px",
       width: "calc(100% - 30px)",
-      backgroundColor: "rgba(180, 180, 180, 0.3)"
+      backgroundColor: "blue"
     }
   },
   logoLink: {
@@ -82,6 +82,7 @@ const sidebarStyle = theme => ({
     maxHeight: "30px",
     marginLeft: "10px",
     marginRight: "15px"
+    
   },
   img: {
     width: "35px",
@@ -146,7 +147,7 @@ const sidebarStyle = theme => ({
     marginRight: "15px",
     textAlign: "center",
     verticalAlign: "middle",
-    color: "rgba(255, 255, 255, 0.8)"
+    color: "blue"
   },
   itemText: {
     ...defaultFont,
