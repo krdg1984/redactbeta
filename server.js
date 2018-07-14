@@ -76,7 +76,7 @@ function(email, password, done) {
 
 // ROUTING
 app.use( require('./routes/index'))
-// app.use(require('./routes/application'))
+// app.use(..sjrequire('./routes/application'))
 // app.use(require('./routes/api'))
 
 // RUN SERVER
