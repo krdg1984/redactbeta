@@ -47,6 +47,10 @@ router.post('/signin', passport.authenticate('local', {
       // }
 );
 
+router.post('/add/content', function(req, res) {
+      console.log("it logged the info")
+})
+
 //SIGNOUT USER
 router.get('/logout', function(req, res){
       req.logout();

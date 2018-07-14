@@ -76,8 +76,8 @@ function(email, password, done) {
 
 // ROUTING
 app.use( require('./routes/index'))
-app.use(require('./routes/application'))
-app.use(require('./routes/api'))
+// app.use(require('./routes/application'))
+// app.use(require('./routes/api'))
 
 // RUN SERVER
 db.sequelize.sync({}).then(function() {
