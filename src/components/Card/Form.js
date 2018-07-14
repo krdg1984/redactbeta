@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class Form extends Component {
   constructor(props) {
     super(props);
     this.handleChange.bind(this)
     this.onSubmit.bind(this)
+
     this.state = {
                   loans: '',
                   creditCards: '',
@@ -27,7 +29,7 @@ class Form extends Component {
 
   onSubmit(event) {
     event.preventDefault();
-    this.setState({
+    axios.post('/add/content', this.state).then( this.setState({
       loans: '',
       creditCards: '',
       utilities: '',
@@ -38,7 +40,7 @@ class Form extends Component {
       travel: '',
       buyHome: '',
       invest: ''
-      })
+      }))
   }
   
     render () {
