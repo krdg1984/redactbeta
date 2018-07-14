@@ -18,18 +18,18 @@ import Form from "components/Card/Form.js"
 const styles = {
   cardCategoryWhite: {
     "&,& a,& a:hover,& a:focus": {
-      color: "rgba(255,255,255,.62)",
+      color: "black",
       margin: "0",
       fontSize: "14px",
       marginTop: "0",
       marginBottom: "0"
     },
     "& a,& a:hover,& a:focus": {
-      color: "#FFFFFF"
+      color: "black"
     }
   },
   cardTitleWhite: {
-    color: "#FFFFFF",
+    color: "black",
     marginTop: "0px",
     minHeight: "auto",
     fontWeight: "300",
@@ -37,7 +37,7 @@ const styles = {
     marginBottom: "3px",
     textDecoration: "none",
     "& small": {
-      color: "#777",
+      color: "black",
       fontSize: "65%",
       fontWeight: "400",
       lineHeight: "1"
