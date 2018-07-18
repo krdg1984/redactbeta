@@ -25,9 +25,17 @@ const dashboardRoutes = [
     icon: Dashboard,
     component: DashboardPage
   },
+
+  {
+    path: "/notifications",
+    sidebarName: "Goals",
+    navbarName: "Goals",
+    icon: Notifications,
+    component: NotificationsPage
+  },
   {
     path: "/user",
-    sidebarName: "User Profile",
+    sidebarName: "Update Profile",
     navbarName: "Profile",
     icon: Person,
     component: UserProfile
@@ -60,13 +68,13 @@ const dashboardRoutes = [
   //   icon: LocationOn,
   //   component: Maps
   // },
-  {
-    path: "/notifications",
-    sidebarName: "Goals",
-    navbarName: "Goals",
-    icon: Notifications,
-    component: NotificationsPage
-  },
+  // {
+  //   path: "/notifications",
+  //   sidebarName: "Goals",
+  //   navbarName: "Goals",
+  //   icon: Notifications,
+  //   component: NotificationsPage
+  // },
   // {
   //   path: "/upgrade-to-pro",
   //   sidebarName: "Upgrade To PRO",

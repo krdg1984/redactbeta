@@ -111,6 +111,15 @@ function LandingForm(props) {
                 </GridItem>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
+                    labelText="Gender"
+                    id="Gender"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                  <CustomInput
                     labelText="Postal Code"
                     id="postal-code"
                     formControlProps={{
