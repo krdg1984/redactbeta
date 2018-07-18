@@ -14,6 +14,7 @@ import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Form from "components/Card/Form.js"
+import LandingForm from "../../components/Card/LandingForm";
 
 const styles = {
   cardCategoryWhite: {
@@ -89,6 +90,7 @@ class Notifications extends React.Component {
             </a>
           </p>
           <Form />
+          <LandingForm />
         </CardHeader>
         {/* <CardBody>
           <Grid container>
