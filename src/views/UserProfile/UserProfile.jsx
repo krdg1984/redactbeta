@@ -78,6 +78,7 @@ function UserProfile(props) {
                   />
                 </GridItem>
               </Grid>
+
               <Grid container>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
@@ -88,6 +89,7 @@ function UserProfile(props) {
                     }}
                   />
                 </GridItem>
+
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Last Name"
@@ -96,8 +98,19 @@ function UserProfile(props) {
                       fullWidth: true
                     }}
                   />
-                </GridItem>
+                  </GridItem>
               </Grid>
+              
+              <GridItem xs={12} sm={12} md={3}>
+                  <CustomInput
+                    labelText="Gender"
+                    id="Gender"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
+
               <Grid container>
                 <GridItem xs={12} sm={12} md={4}>
                   <CustomInput
