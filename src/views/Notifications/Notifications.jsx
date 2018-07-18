@@ -90,7 +90,7 @@ class Notifications extends React.Component {
             </a>
           </p>
           <Form />
-          <LandingForm />
+          {/* <LandingForm /> */}
         </CardHeader>
         {/* <CardBody>
           <Grid container>
