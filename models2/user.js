@@ -18,6 +18,15 @@ module.exports = function(sequelize, DataTypes) {
           notEmpty: true,
       }
     },
+
+    UserName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+          isAlpha: true,
+          notEmpty: true,
+      }
+    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -26,6 +35,15 @@ module.exports = function(sequelize, DataTypes) {
           isEmail: true,
           notEmpty: true,
       }
+    },
+
+    gender: 
+    type.Datatypes.String,
+    allowNull: false,
+    vaildate: {
+      notEmpty: true,
+
+  
     },
     password: {
       type: DataTypes.STRING,
